@@ -1153,7 +1153,7 @@ body {
 }
 
 /* ==========================================================================
-   ZETRON TECH FOOTER CREDIT (Minimalist Style like reference)
+   ZETRON TECH FOOTER CREDIT (Exact match to reference: borderless & Cormorant Garamond)
    ========================================================================== */
 .zetron-badge-container {
   display: flex;
@@ -1161,38 +1161,48 @@ body {
   align-items: center;
   margin: 35px auto 25px auto;
   width: 100%;
+  border: none !important;
+  background: transparent !important;
 }
 
 .zetron-credit-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #a88a68;
+  color: #c2a78c;
   text-decoration: none;
-  font-family: 'Times New Roman', Times, Georgia, serif;
+  font-family: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
   font-size: 11px;
-  letter-spacing: 0.22em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  transition: all 0.3s ease;
-  opacity: 0.85;
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0;
+  transition: opacity 0.3s ease, color 0.3s ease;
 }
 
 .zetron-credit-link:hover {
-  color: var(--color-gold);
-  opacity: 1;
-  transform: translateY(-1px);
+  color: #b16c15;
+  opacity: 0.9;
 }
 
 .zetron-instagram-icon {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
+  color: #c2a78c;
   stroke: currentColor;
   flex-shrink: 0;
+  border: none !important;
 }
 
 .zetron-credit-text {
   display: inline-block;
   white-space: nowrap;
+  letter-spacing: 0.2em;
+  border: none !important;
 }
 
 @media (max-width: 480px) {
@@ -1201,26 +1211,26 @@ body {
   }
 
   .zetron-credit-link {
-    font-size: 10px;
+    font-size: 10.5px;
     letter-spacing: 0.18em;
     gap: 7px;
   }
 
   .zetron-instagram-icon {
-    width: 13.5px;
-    height: 13.5px;
+    width: 16px;
+    height: 16px;
   }
 }
 
 @media (max-width: 360px) {
   .zetron-credit-link {
-    font-size: 9px;
+    font-size: 9.5px;
     letter-spacing: 0.15em;
     gap: 6px;
   }
 
   .zetron-instagram-icon {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
   }
 }
