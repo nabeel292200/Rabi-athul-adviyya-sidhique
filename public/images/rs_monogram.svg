@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 95" width="65" height="48" fill="none">
+  <defs>
+    <linearGradient id="blackGradRS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D2D2D"/>
+      <stop offset="40%" stop-color="#141414"/>
+      <stop offset="70%" stop-color="#222222"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <filter id="softGlowRS" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.2" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Decorative top mini royal flourish in sleek black -->
+  <path d="M65 10 L67 14 L71 12 L69 17 L61 17 L59 12 L63 14 Z" fill="url(#blackGradRS)" opacity="0.95"/>
+  <circle cx="65" cy="8" r="1.5" fill="url(#blackGradRS)"/>
+
+  <!-- Left Calligraphic Letter 'R' for Rabiathul in sleek black -->
+  <g filter="url(#softGlowRS)">
+    <!-- R vertical stroke with serif flourish -->
+    <path d="M42 25 C39 23 34 24 33 28 C32 32 33 46 33 60 C33 70 31 75 28 77 C26 78 27 80 30 81 C35 81 40 80 41 78 C41 76 39 75 38 73 C37 70 37 60 37 49 C42 49 53 49 53 38 C53 28 45 25 42 25 Z M37 31 C39 29 46 29 47 34 C48 39 42 43 37 43 L37 31 Z" fill="url(#blackGradRS)"/>
+    <!-- R leg sweeping right -->
+    <path d="M45 46 C47 48 52 56 55 64 C58 72 61 77 65 79 C68 81 67 82 63 82 C58 82 54 77 50 69 C47 62 44 54 42 50 Z" fill="url(#blackGradRS)"/>
+  </g>
+
+  <!-- Right Calligraphic Letter 'S' for Sidhique in sleek black -->
+  <g filter="url(#softGlowRS)">
+    <path d="M78 28 C74 24 67 24 64 28 C61 32 64 36 68 39 C74 43 81 47 81 55 C81 65 71 70 62 69 C56 68 53 65 52 64 C51 63 50 64 51 66 C53 69 57 73 64 73 C75 73 86 67 86 54 C86 45 78 40 73 36 C68 33 66 30 66 27 C66 23 71 21 76 23 C79 24 81 26 82 27 C83 28 84 27 83 26 C82 24 80 23 78 28 Z" fill="url(#blackGradRS)"/>
+  </g>
+
+  <!-- Connecting ribbon loop in sleek black -->
+  <path d="M52 48 Q64 42 66 52 Q68 62 58 65" stroke="url(#blackGradRS)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  <circle cx="58" cy="65" r="1.5" fill="url(#blackGradRS)"/>
+</svg>

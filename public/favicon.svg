@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <defs>
+    <linearGradient id="goldFaviconRS" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#B16C15"/>
+      <stop offset="100%" stop-color="#8C4E08"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="#FAF8F3" stroke="url(#goldFaviconRS)" stroke-width="3"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="url(#goldFaviconRS)" stroke-width="0.8" stroke-dasharray="3,3"/>
+  
+  <!-- Crown mini flourish -->
+  <path d="M60 22 L62 26 L66 24 L64 29 L56 29 L54 24 L58 26 Z" fill="url(#goldFaviconRS)"/>
+  
+  <!-- Interlocking RS Monogram -->
+  <text x="44" y="74" font-family="'Pinyon Script', cursive, Georgia, serif" font-size="52" font-weight="bold" fill="url(#goldFaviconRS)" text-anchor="middle">R</text>
+  <text x="76" y="74" font-family="'Pinyon Script', cursive, Georgia, serif" font-size="52" font-weight="bold" fill="url(#goldFaviconRS)" text-anchor="middle">S</text>
+  <text x="60" y="80" font-family="'Times New Roman', serif" font-size="18" font-style="italic" fill="#B16C15" text-anchor="middle">&amp;</text>
+</svg>
