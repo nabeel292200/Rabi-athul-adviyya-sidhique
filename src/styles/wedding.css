@@ -1153,118 +1153,74 @@ body {
 }
 
 /* ==========================================================================
-   ZETRON TECH FOOTER BADGE
+   ZETRON TECH FOOTER CREDIT (Minimalist Style like reference)
    ========================================================================== */
 .zetron-badge-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 45px auto 25px auto;
+  margin: 35px auto 25px auto;
   width: 100%;
 }
 
-.zetron-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  background-color: #ffffff;
-  border: 1.5px solid var(--color-gold);
-  border-radius: 9999px;
-  padding: 4px 5px 4px 16px;
-  text-decoration: none;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  max-width: 95%;
-  box-sizing: border-box;
-}
-
-.zetron-badge:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(122, 27, 41, 0.15);
-  border-color: #7a1b29;
-}
-
-.zetron-badge-left {
+.zetron-credit-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  color: #a88a68;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  opacity: 0.85;
+}
+
+.zetron-credit-link:hover {
+  color: var(--color-gold);
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 .zetron-instagram-icon {
-  color: #7a1b29;
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
   flex-shrink: 0;
 }
 
-.zetron-badge-text {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  color: #6d665a;
-  letter-spacing: 0.3px;
+.zetron-credit-text {
+  display: inline-block;
   white-space: nowrap;
-}
-
-.zetron-brand-name {
-  color: #7a1b29;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.zetron-follow-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #7a1b29;
-  color: #ffffff !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  padding: 7px 18px;
-  border-radius: 9999px;
-  white-space: nowrap;
-  transition: background-color 0.25s ease, transform 0.2s ease;
-}
-
-.zetron-badge:hover .zetron-follow-btn {
-  background-color: #5c141f;
 }
 
 @media (max-width: 480px) {
-  .zetron-badge {
-    padding: 3px 4px 3px 12px;
-    gap: 10px;
+  .zetron-badge-container {
+    margin: 28px auto 20px auto;
   }
 
-  .zetron-badge-text {
-    font-size: 11.5px;
-  }
-
-  .zetron-follow-btn {
+  .zetron-credit-link {
     font-size: 10px;
-    padding: 6px 14px;
-    letter-spacing: 1px;
+    letter-spacing: 0.18em;
+    gap: 7px;
   }
 
   .zetron-instagram-icon {
-    width: 15px;
-    height: 15px;
+    width: 13.5px;
+    height: 13.5px;
   }
 }
 
 @media (max-width: 360px) {
-  .zetron-badge {
-    padding: 3px 4px 3px 10px;
-    gap: 8px;
-  }
-
-  .zetron-badge-text {
-    font-size: 10px;
-  }
-
-  .zetron-follow-btn {
+  .zetron-credit-link {
     font-size: 9px;
-    padding: 5px 10px;
+    letter-spacing: 0.15em;
+    gap: 6px;
+  }
+
+  .zetron-instagram-icon {
+    width: 12px;
+    height: 12px;
   }
 }
