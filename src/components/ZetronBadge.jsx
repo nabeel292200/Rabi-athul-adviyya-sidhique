@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ZetronBadge() {
   return (
-    <div className="zetron-badge-container scroll-animate">
+    <div className="zetron-badge-container">
       <a
         href="https://www.instagram.com/zetron.tech"
         target="_blank"
