@@ -32,8 +32,8 @@
   --color-border-btn: #e8e2d3;
   --color-border-dashed: #e6dfca;
 
-  --font-serif: 'Times New Roman', 'Amiri', 'Georgia', serif;
-  --font-script: 'Pinyon Script', cursive, serif;
+  --font-serif: 'Cormorant Garamond', 'Times New Roman', 'Amiri', 'Georgia', serif;
+  --font-script: 'Great Vibes', 'Alex Brush', 'Pinyon Script', cursive, serif;
   --font-arabic: 'Amiri', 'Traditional Arabic', 'Times New Roman', serif;
 }
 
@@ -339,51 +339,146 @@ body {
 }
 
 /* ==========================================================================
-   BRIDE & GROOM SECTIONS
+   BRIDE & GROOM SECTIONS — ROYAL LUXURY ENHANCED
    ========================================================================== */
-.label-heading {
+.person-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  margin: 6px 0;
+  width: 100%;
+}
+
+.badge-ornament-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+
+.badge-flourish {
+  color: var(--color-gold);
   font-size: 10px;
+  opacity: 0.85;
+  transform: translateY(-0.5px);
+}
+
+.label-heading {
+  font-size: 11px;
   font-family: var(--font-serif);
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin: 0 0 10px 0;
+  letter-spacing: 2.8px;
+  font-weight: 600;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .label-bride {
   color: var(--color-gold);
-  margin-top: 10px;
 }
 
 .label-groom {
   color: var(--color-gold);
 }
 
-.label-parent {
-  color: var(--color-gray-label);
-  font-size: 10px;
-  font-family: var(--font-serif);
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 20px 0 5px 0;
+.name-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2px 10px;
+  overflow: visible;
 }
 
 .name-script {
   font-family: var(--font-script);
-  color: #111111;
-  font-size: calc(34px + 2.5vw);
-  margin: 0 0 5px 0;
-  line-height: 1.15;
+  font-weight: 400;
+  font-size: clamp(38px, 5.2vw, 66px);
+  margin: 2px 0 0 0;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+  text-align: center;
   white-space: nowrap;
   max-width: 100%;
+  color: var(--color-gold);
+  /* Luxury multi-stop royal gold foil gradient */
+  background: linear-gradient(
+    125deg,
+    #7a4714 0%,
+    #a87428 15%,
+    #d9aa4d 30%,
+    #fff6db 48%,
+    #ffffff 52%,
+    #d9aa4d 68%,
+    #a87428 85%,
+    #713e0c 100%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldFoilGleam 7s ease-in-out infinite;
+  filter: drop-shadow(0 2px 7px rgba(177, 108, 21, 0.26))
+          drop-shadow(0 1px 2px rgba(60, 30, 8, 0.14));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+  user-select: none;
+}
+
+.name-script:hover {
+  transform: scale(1.025);
+  filter: drop-shadow(0 4px 14px rgba(212, 175, 55, 0.45))
+          drop-shadow(0 1px 3px rgba(60, 30, 8, 0.15));
+}
+
+@keyframes goldFoilGleam {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.name-flourish-accent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px auto 14px auto;
+  width: 150px;
+  height: 14px;
+  opacity: 0.9;
+}
+
+.flourish-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.label-parent {
+  color: var(--color-gray-label);
+  font-size: 10.5px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
 }
 
 .parent-names {
   color: var(--color-sage);
-  font-size: 18px;
+  font-size: 19px;
   font-family: var(--font-serif);
+  letter-spacing: 0.4px;
   margin: 0 0 10px 0;
+  font-weight: 500;
 }
 
 .decor-shape {
@@ -1068,7 +1163,16 @@ body {
   }
 
   .name-script {
-    font-size: clamp(22px, 5.6vw, 32px);
+    font-size: clamp(24px, 6.5vw, 36px);
+    white-space: normal;
+    word-break: normal;
+    padding: 2px 4px 8px 4px;
+    line-height: 1.28;
+  }
+
+  .name-flourish-accent {
+    width: 120px;
+    margin: 2px auto 10px auto;
   }
 
   .date-side-text {
